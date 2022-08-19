@@ -1,0 +1,14 @@
+<h1><%= @topic.hashtag %></h1>
+
+<h1>Topics</h1>
+
+<ul>
+  <% @response["data"].each do |tweet| %>
+    <li>
+    
+      <%= tweet["text"] %>
+      
+    </li>
+  <% end %>
+</ul>
+

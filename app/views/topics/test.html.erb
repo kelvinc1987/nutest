@@ -1,0 +1,11 @@
+<h1>Topics</h1>
+
+<ul>
+  <% @topics.each do |topic| %>
+    <li>
+    <a href="/test/<%= topic.id %>">
+      <%= topic.hashtag %>
+      </a>
+    </li>
+  <% end %>
+</ul>
