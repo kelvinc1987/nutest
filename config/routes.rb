@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  
+  root "topics#index"
+
   get '/topics', to: 'topics#index'
-  get '/test', to: 'topics#test'
-  get '/test/:id', to: 'topics#show'
+  get '/topic/:id', to: 'topics#show'
+  get '/usertopic', to: 'topics#usertopic'
 
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

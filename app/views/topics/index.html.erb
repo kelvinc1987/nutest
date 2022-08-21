@@ -1,2 +1,20 @@
+<h1>Search one of our 3 Topics</h1>
+
+<ul>
+  <% @topics.each do |topic| %>
+    <li>
+    <a href="/topic/<%= topic.id %>">
+      <%= topic.hashtag %>
+      </a>
+    </li>
+  <% end %>
+</ul>
 
 
+<h1>Or search one of your own</h1>
+
+<form action="/usertopic">
+  <label for="usertopic">Look it up:</label><br>
+  <input type="text" id="usertopic" name="usertopic"><br>
+  <input type="submit" value="Submit">
+</form>

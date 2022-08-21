@@ -1,6 +1,5 @@
-
 <h1>Last 10 recent tweets about:</h1>
-<h1><%= @topic.hashtag %></h1>
+<h1><%= @userhash %></h1>
 
 <ul>
   <% @response["data"].each do |tweet| %>
@@ -11,4 +10,3 @@
     </li>
   <% end %>
 </ul>
-
