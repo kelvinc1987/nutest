@@ -1,12 +1,18 @@
 <h1>Last 10 recent tweets about:</h1>
 <h1><%= @userhash %></h1>
 
-<ul>
-  <% @response["data"].each do |tweet| %>
-    <li>
+<div class = "board">
+
+    <% @response["data"].each do |tweet| %>
+    <div class = "tweets">
     
       <%= tweet["text"] %>
-      
-    </li>
-  <% end %>
-</ul>
+    
+    </div>
+    <% end %>
+
+</div>
+
+<form>
+ <input type="button" value="Go back!" onclick="history.back()">
+</form>
