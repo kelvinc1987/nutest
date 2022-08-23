@@ -1,24 +1,5 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The following is a rails app that lets you pull 10 recent tweets on a certain topic.
+In order for it to run on your computer you will need to: 
+1. install the dotenv gem
+2. create .env file with MY_BEARER_TOKEN =(your bearer token here)
+website should be live at https://dashboard.heroku.com/apps/murmuring-mountain-29920
